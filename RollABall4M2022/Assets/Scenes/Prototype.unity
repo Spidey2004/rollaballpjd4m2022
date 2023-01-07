@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1074,7 +1074,7 @@ NavMeshAgent:
   m_ObstacleAvoidanceType: 4
 --- !u!95 &386199236
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1091,7 +1091,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!4 &386199237
 Transform:
   m_ObjectHideFlags: 0
@@ -1134,11 +1134,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myPatrolRoute: {fileID: 1325941815}
+  _enemyFSM: {fileID: 386199236}
   myEnemyData: {fileID: 11400000, guid: 140bd368248ab427486c84e716e5eec2, type: 2}
-  distanceToFollow: 0
-  distanceToAttack: 0
-  distanceToLeaveAttack: 0
-  distanceToLeaveFollow: 0
+  distanceToFollow: 1
+  distanceToAttack: 2
+  distanceToLeaveAttack: 3
+  distanceToLeaveFollow: 4
 --- !u!1 &417113996
 GameObject:
   m_ObjectHideFlags: 0
@@ -7027,7 +7028,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25604
+  m_Name: pb_Mesh26178
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7214,7 +7215,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21139c5c8236b4c698f953a606bb4c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolPoints: []
+  patrolPoints:
+  - {fileID: 1464775546}
+  - {fileID: 1525310951}
+  - {fileID: 54556999}
+  - {fileID: 1876556092}
 --- !u!4 &1325941816
 Transform:
   m_ObjectHideFlags: 0
@@ -7589,7 +7594,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410599809}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: -4.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -37,6 +37,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcc193e20c2284ac082535167bcbf679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  patrolPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  tolerance: 1
+  distance: 4
 --- !u!114 &-5576597920255453212
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -165,7 +172,7 @@ AnimatorController:
     m_Controller: {fileID: 0}
   - m_Name: Distance
     m_Type: 1
-    m_DefaultFloat: 0
+    m_DefaultFloat: 4
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
